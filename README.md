@@ -23,7 +23,7 @@ sudo apt update
 sudo apt upgrade
 sudo apt install git
 sudo apt install python3-pip
-pip install cv2
+pip install opencv-python
 pip install numpy
 git clone https://github.com/rockchip-linux/rknn-toolkit2.git
 cd rknn-toolkit2
