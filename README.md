@@ -46,7 +46,7 @@ rknn_server
 If any of these are miss or out of date, you have to download them and move them to the proper locations
 
 ```
-mv rknn-toolkit2/rknpu2/runtime/Linux/librknn_api/aarch64 /usr/lib
+mv rknn-toolkit2/rknpu2/runtime/Linux/librknn_api/aarch64/libknnrt.so /usr/lib
 cd rknn-toolkit2/rknpu2/runtime/Linux/rknn_server/aarch64/usr/bin/
 mv rknn_server /usr/bin
 mv start_rknn.sh /usr/bin
@@ -59,7 +59,7 @@ Next, install the rknn_toolbox2_lite package and api
 cd rknn-toolkit2/rknn_toolkit2_lite/packages
 
 #Install api, where x is your current python version
-pip install knn_toolkit_lite2-1.6.0-cp3x-cp3xm-linux_aarch64.whl
+pip install rknn_toolkit_lite2-1.6.0-cp3x-cp3xm-linux_aarch64.whl
 ```
 
 Finally, place yolov5n.rknn and rknn_yolov5n_test.py in the same directory, and run the script with a webcam. Python script can be modified to work off of single images relatively easily
